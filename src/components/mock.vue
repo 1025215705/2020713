@@ -1,10 +1,8 @@
-【App.vue】
 <template>
     <div>
         <button @click="login">login</button>
         <button @click="list">list</button>
     </div>
-    <!--App -->
 </template>
 
 <script>
@@ -20,7 +18,6 @@
                     }
                 })
             },
-            
             list() {
                 axios.post("/list").then(response => {
                     if (response.data) {

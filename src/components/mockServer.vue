@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- <button @click="login">login</button>
-        <button @click="list">list</button> -->
+        <button @click="list">list</button>  -->
     </div>
     <!--App -->
 </template>
@@ -21,7 +21,7 @@ export default {
   methods: {
     getUserInfo() {
       //请求'/user/userinfo'接口
-      axios.get("/user/userinfo").then(({ data }) => {
+      axios.get("/getUserInfo").then(({ data }) => {
         //打印mock data
         console.log(data);
         if (data.error === 0) {
