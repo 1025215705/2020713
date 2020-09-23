@@ -43,8 +43,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     watchOptions: {
       poll: config.dev.poll,
     },
-    before: require('../mockServer/mock-server.js'),//引入mock/index.js
-    //before: require('../mock/index.js')
+    //before: require('../mockServer/mock-server.js'),//引入mock/index.js
+   // before: require('../src/components/mock/mock2/index')
   },
   plugins: [
     new webpack.DefinePlugin({
