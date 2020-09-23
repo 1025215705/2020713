@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-// import axios from 'axios'
+import axios from 'axios'
 import "../static/iconfont.js"
 import "../static/iconfont.css"
 
@@ -15,7 +15,7 @@ Vue.use(ElementUI);
 // Vue.prototype.$axios = axios    //全局注册，使用方法为:this.$axios
 import '@/icons'
 
-
+console.log(router);
 
 
 /* eslint-disable no-new */

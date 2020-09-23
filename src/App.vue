@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-view/>
+    <router-view>tree可编辑</router-view>
+    <!-- <router-view to="/demo/srcoll">srcoll</router-view> -->
   </div>
 </template>
 
