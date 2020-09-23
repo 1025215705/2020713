@@ -3,19 +3,23 @@
                  @change="handleChange">
         <el-collapse-item title="class2: ['1', '2', '3'].map(parseInt); 输出结果"
                           name="1">
-            <div>结果: {{['1', '2', '3'].map(parseInt)}}</div>
+            <div>结果: {{['1', '2', '3'].map(parseInt)}} <br>
+                 <el-button @click="class2">查看打印信息</el-button>
+            </div>
         </el-collapse-item>
         <el-collapse-item title="什么是防抖和节流？有什么区别？如何实现？"
                           name="2">
             <div>
                 防抖：高频率的触发某个事件， 如果在n秒再次被触发， 则重新计算
                 <br>
-                <button @click="scroll">查看效果</button>
+                 <el-button @click="scroll">查看效果</el-button>
+               
             </div>
             <div>
                 节流： 高频率的触发某个事件下， 稀释掉频率
                 <br>
-                <button @click="resize">查看效果</button>
+                <el-button @click="resize">查看效果</el-button>
+               
             </div>
         </el-collapse-item>
         <el-collapse-item title="效率 Efficiency"

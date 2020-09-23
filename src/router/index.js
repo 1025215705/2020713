@@ -4,10 +4,11 @@ import EditTree from '../components/demo/editTree.vue'
 import Srcoll from '../components/demo/Srcoll.vue'
 import Icon from '../components/icon/Index.vue'
 import mock from '../components/mock/mock.vue'
+
 //import mockServer from '../components/mockServer.vue'
 import classTwoToTen from '../practice/class/class2-10.vue'
+import design from '../practice/design/index.vue'
 Vue.use(Router)
-
 export default new Router({
     routes: [
         {
@@ -34,6 +35,11 @@ export default new Router({
             path: '/class/2',
             name: 'classTwoToTen',
             component: classTwoToTen
+        },
+        {
+            path: '/class/design',
+            name: 'design',
+            component: design
         }
     ]
 })

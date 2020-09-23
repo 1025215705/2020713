@@ -16,15 +16,13 @@ var baiduMapAdaptee = {
     }
 }
 
-var renderMap = function (map: any) {
+var renderMap = function (map) {
     if (map.show instanceof Function) {
         map.show();
     }
 };
-let main = function () {
+export default  function main () {
     renderMap(googleMap);
     renderMap(baiduMapAdaptee);
 }
 
-
-export default { main }

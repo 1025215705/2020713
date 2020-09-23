@@ -14,8 +14,8 @@
 </template>
 
 <script>
-    import mock from './mock/mock.js'
-    //import mock2 from './mock2/index.js'
+    //import mock from './mock/mock.js'
+    import mock2 from './mock2/index.js'
     import axios from 'axios'
     export default {
         methods: {
