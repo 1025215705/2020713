@@ -24,7 +24,10 @@ class AtomDecorator {
         console.log('发射原子弹');
     }
 }
-var plane = new Plane();
-plane = new MissileDecorator(plane);
-plane = new AtomDecorator(plane);
-plane.fire();
+export default  function main () {
+    var plane = new Plane();
+    plane = new MissileDecorator(plane);
+    plane = new AtomDecorator(plane);
+    plane.fire();
+}
+
