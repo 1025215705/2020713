@@ -1,9 +1,9 @@
 <template>
   <div class="sortDiv">
-	<div>
+	<!-- <div>
 		<icon-svg icon-class="cascader" />
     <svg-icon icon-class="date"></svg-icon>
-	</div>
+	</div> -->
     <el-tree :data="sortData" draggable node-key="id" ref="sortTree" default-expand-all :expand-on-click-node="false" :render-content="renderContent" :allow-drop="allowDrop">
     </el-tree>
     <el-button @click="getData">获取数据</el-button>
@@ -11,12 +11,12 @@
 </template>
 <script>
 //引入svg组件
-import IconSvg from '@/components/IconSvg'
+//import IconSvg from '@/components/IconSvg'
 export default {
-  name: 'Sort',
-  components:{
-    IconSvg,
-  },
+  name: 'editTree',
+//   components:{
+//     IconSvg,
+//   },
   data() {
     return {
       sortData: [
